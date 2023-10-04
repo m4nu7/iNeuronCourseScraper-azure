@@ -19,6 +19,9 @@ jobs:
 
       - name: Set up Python version
         uses: actions/setup-python@v1
+        runs:
+          using: 'node20'
+          main: 'application.py'
         with:
           python-version: '3.8'
 
